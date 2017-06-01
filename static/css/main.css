@@ -1,0 +1,21 @@
+.form-control {
+  width: 30%;
+}
+
+.navbar-default {
+  background: #1ED760;
+  border-color: green;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+/*body {
+  background: #282828;
+}*/
+
+h4 {
+  font-size: 12px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Potify",
+  "version": "1.0.0",
+  "description": "Potify - music searcher",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Carlos Cancino",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.1",
+    "spotify-web-api-node": "^2.4.0"
+  }
+}

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .container
+    form(method='GET', action='/artist')
+      #form-group
+        h1 Search artist
+        p.lead Enter artist name to retrieve info
+        input.pull-left.form-control(type='text', name='name')
+        input.btn.btn-success(type='submit', value='Search')
+      br

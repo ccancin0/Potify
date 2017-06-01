@@ -1,0 +1,22 @@
+extends index
+
+block content
+  .container
+    form(method='GET', action='/artist')
+      #form-group
+        h1 Search artist
+        p.lead Enter artist name to retrieve info
+        input.pull-left.form-control(type='text', name='name')
+        input.btn.btn-success(type='submit', value='Search')
+      br
+  - for (var i = 0; i < info.artists.items.length; i++) {
+    .col-md-3
+      .well.text-center
+        h4= info.artists.items[i].name
+        // img(src= info.artists.items[i].images[0].url)
+        p followers
+        h3= info.artists.items[i].followers.total
+        a(href='/artist/' + info.artists.items[i].id)
+          input.btn.btn-primary(type='submit', value='More Info')
+    
+  - }
